@@ -1,15 +1,17 @@
 import './App.css'
-import {Header} from "./Header.jsx";
+import {Header} from "./components/Header.jsx";
+import {Sidebar} from "./components/Sidebar.jsx";
+
 
 function App() {
 
 
-  return (
-    <div className="app">
-      <Header />
-    <h1>Building Gmail</h1>
-    </div>
-  )
+    return (
+        <div className="app">
+            <Header/>
+            <Sidebar/>
+        </div>
+    )
 }
 
 export default App
