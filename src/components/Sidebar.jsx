@@ -24,7 +24,7 @@ export function Sidebar(props) {
             <SidebarOption Icon={LabelImportantIcon} title="Important" number={60}/>
             <SidebarOption Icon={NearMeIcon} title="Sent" number={80}/>
             <SidebarOption Icon={NoteIcon} title="Drafts" number={10}/>
-            <SidebarOption Icon={ExpandMoreIcon} title="More" number={15}/>
+            <SidebarOption Icon={ExpandMoreIcon} title="More" />
 
             <div className="sidebar_footer">
                 <div className="sidebar_footerIcons">
