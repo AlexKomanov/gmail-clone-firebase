@@ -1,5 +1,5 @@
 import './Sidebar.css'
-import {Button} from "@mui/material";
+import {Button, IconButton} from "@mui/material";
 import AddIcon from '@mui/icons-material/Add';
 import InboxIcon from '@mui/icons-material/Inbox';
 import StarIcon from '@mui/icons-material/Star';
@@ -9,6 +9,7 @@ import NearMeIcon from '@mui/icons-material/NearMe';
 import NoteIcon from '@mui/icons-material/Note';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import {SidebarOption} from "./SidebarOption.jsx";
+import {Duo, Person, Phone} from "@mui/icons-material";
 
 export function Sidebar(props) {
     return (
@@ -24,6 +25,20 @@ export function Sidebar(props) {
             <SidebarOption Icon={NearMeIcon} title="Sent" number={80}/>
             <SidebarOption Icon={NoteIcon} title="Drafts" number={10}/>
             <SidebarOption Icon={ExpandMoreIcon} title="More" number={15}/>
+
+            <div className="sidebar_footer">
+                <div className="sidebar_footerIcons">
+                    <IconButton >
+                        <Person/>
+                    </IconButton>
+                    <IconButton >
+                        <Duo/>
+                    </IconButton>
+                    <IconButton >
+                        <Phone/>
+                    </IconButton>
+                </div>
+            </div>
         </div>
     );
 }
