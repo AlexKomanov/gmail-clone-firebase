@@ -1,5 +1,5 @@
 import './Header.css'
-import MenuIcon from '/@mui/icons-material/menu'
+import MenuIcon from '@mui/icons-material/menu'
 import {Avatar, IconButton} from "@mui/material";
 import logo from '../../public/mail-logo.png'
 import SearchIcon from '@mui/icons-material/Search';
