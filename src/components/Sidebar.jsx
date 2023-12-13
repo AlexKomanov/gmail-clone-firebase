@@ -11,7 +11,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import {SidebarOption} from "./SidebarOption.jsx";
 import {Duo, Person, Phone} from "@mui/icons-material";
 
-export function Sidebar(props) {
+export function Sidebar() {
     return (
         <div className="sidebar">
             <Button startIcon={<AddIcon fontSize="large"/>}
