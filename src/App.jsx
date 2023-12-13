@@ -16,8 +16,8 @@ function App() {
                 <div className="app_body">
                     <Sidebar/>
                     <Routes>
-                        <Route path="/" element={<EmailList/>} />
-                        <Route path="/mail" element={<Mail/>} />
+                        <Route path="/gmail-clone-firebase/" element={<EmailList/>} />
+                        <Route path="/gmail-clone-firebase/mail" element={<Mail/>} />
 
                     </Routes>
                 </div>
