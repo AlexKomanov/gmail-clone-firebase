@@ -6,9 +6,9 @@ import {
     CheckCircle,
     Delete,
     Email,
-    Error,
+    Error, ExitToApp,
     LabelImportant, MoreVert,
-    MoveToInbox,
+    MoveToInbox, Print, UnfoldMore,
     WatchLater
 } from "@mui/icons-material";
 
@@ -22,32 +22,41 @@ export function Mail() {
                     <IconButton onClick={() => navigate("/gmail-clone-firebase/")}>
                         <ArrowBack/>
                     </IconButton>
-                    <IconButton >
+                    <IconButton>
                         <MoveToInbox/>
                     </IconButton>
-                    <IconButton >
+                    <IconButton>
                         <Error/>
                     </IconButton>
-                    <IconButton >
+                    <IconButton>
                         <Delete/>
                     </IconButton>
-                    <IconButton >
+                    <IconButton>
                         <Email/>
                     </IconButton>
-                    <IconButton >
+                    <IconButton>
                         <WatchLater/>
                     </IconButton>
-                    <IconButton >
+                    <IconButton>
                         <CheckCircle/>
                     </IconButton>
-                    <IconButton >
+                    <IconButton>
                         <LabelImportant/>
                     </IconButton>
-                    <IconButton >
+                    <IconButton>
                         <MoreVert/>
                     </IconButton>
                 </div>
                 <div className="mail_toolsRight">
+                    <IconButton>
+                        <UnfoldMore/>
+                    </IconButton>
+                    <IconButton>
+                        <Print/>
+                    </IconButton>
+                    <IconButton>
+                        <ExitToApp/>
+                    </IconButton>
 
                 </div>
             </div>
