@@ -60,7 +60,17 @@ export function Mail() {
 
                 </div>
             </div>
-            <h1>Mail Component</h1>
+            <div className="mail_body">
+                <div className="mail_bodyHeader">
+                    <h2>Subject</h2>
+                    <LabelImportant className="mail_important"/>
+                    <p>title</p>
+                    <p className="mail_time">10pm</p>
+                </div>
+                <div className="mail_message">
+                    <p>This is a message!</p>
+                </div>
+            </div>
         </div>
     );
 }
