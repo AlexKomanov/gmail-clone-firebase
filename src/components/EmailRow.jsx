@@ -18,9 +18,9 @@ export function EmailRow({id, title, subject, description, time}) {
                     <LabelImportantOutlined/>
                 </IconButton>
             </div>
-            <h3 className="emailRow_title">
+            <div className="emailRow_title">
                 <h3>{title}</h3>
-            </h3>
+            </div>
             <div className="emailRow_message">
                 <h4>
                     {subject}{" "}
