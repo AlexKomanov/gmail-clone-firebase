@@ -10,12 +10,15 @@ import NoteIcon from '@mui/icons-material/Note';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import {SidebarOption} from "./SidebarOption.jsx";
 import {Duo, Person, Phone} from "@mui/icons-material";
+import {useDispatch} from "react-redux";
+import {openSendMessage} from "../features/mailSlice.js";
 
 export function Sidebar() {
+    const dispatch = useDispatch();
     return (
         <div className="sidebar">
             <Button startIcon={<AddIcon fontSize="large"/>}
-                    className="sidebar_compose">
+                    className="sidebar_compose" onClick={() => dispatch(openSendMessage())}>
                 Compose
             </Button>
             <SidebarOption Icon={InboxIcon} title="Inbox" number={54} selected={true}/>
