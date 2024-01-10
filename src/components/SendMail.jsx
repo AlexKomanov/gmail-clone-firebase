@@ -27,7 +27,7 @@ export function SendMail() {
                 <Close className="sendMail_close" onClick={() => dispatch(closeSendMessage())}/>
             </div>
             <form onSubmit={handleSubmit(onSubmit)}>
-                <input name="to" type="text"
+                <input name="to" type="email"
                        placeholder="To" {...register("to", {required: true})}/>
                 {errors?.to?.type === "required" && <p className="sendMail_error">This field is required!</p>}
                 <input name="subject" type="text"
